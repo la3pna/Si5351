@@ -12071,12 +12071,15 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -12159,12 +12162,15 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="GND2" gate="1" x="-38.1" y="33.02"/>
 <instance part="GND3" gate="1" x="76.2" y="58.42" rot="R90"/>
 <instance part="GND4" gate="1" x="71.12" y="104.14" rot="R180"/>
+<instance part="GND5" gate="1" x="195.58" y="5.08"/>
 <instance part="GND6" gate="1" x="116.84" y="101.6"/>
 <instance part="GND7" gate="1" x="-2.54" y="76.2" rot="R270"/>
 <instance part="GND8" gate="1" x="-10.16" y="99.06"/>
 <instance part="GND9" gate="1" x="182.88" y="45.72"/>
+<instance part="GND10" gate="1" x="195.58" y="25.4"/>
 <instance part="GND11" gate="1" x="78.74" y="101.6"/>
 <instance part="GND12" gate="1" x="182.88" y="25.4"/>
+<instance part="GND13" gate="1" x="195.58" y="45.72"/>
 <instance part="GND14" gate="1" x="154.94" y="0"/>
 <instance part="GND15" gate="1" x="-40.64" y="99.06"/>
 <instance part="GND16" gate="1" x="-25.4" y="99.06"/>
@@ -12331,6 +12337,33 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="TR3" gate="G$1" pin="1"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="182.88" y1="7.62" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TR1" gate="G$1" pin="4"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="195.58" y1="48.26" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G1" pin="2"/>
+<wire x1="203.2" y1="53.34" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
+<junction x="195.58" y="50.8"/>
+</segment>
+<segment>
+<pinref part="TR2" gate="G$1" pin="4"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="195.58" y1="27.94" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G1" pin="2"/>
+<wire x1="195.58" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="30.48" x2="203.2" y2="33.02" width="0.1524" layer="91"/>
+<junction x="195.58" y="30.48"/>
+</segment>
+<segment>
+<pinref part="TR3" gate="G$1" pin="4"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="195.58" y1="7.62" x2="195.58" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G1" pin="2"/>
+<wire x1="195.58" y1="10.16" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="10.16" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+<junction x="195.58" y="10.16"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-2" pin="1"/>
@@ -12799,30 +12832,6 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="U$2" gate="G$1" pin="PB3(PDO/MISO)"/>
 <wire x1="88.9" y1="33.02" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="TR3" gate="G$1" pin="4"/>
-<pinref part="X3" gate="G1" pin="2"/>
-<wire x1="195.58" y1="10.16" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="10.16" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="TR2" gate="G$1" pin="4"/>
-<pinref part="X2" gate="G1" pin="2"/>
-<wire x1="195.58" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="30.48" x2="203.2" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="TR1" gate="G$1" pin="4"/>
-<pinref part="X1" gate="G1" pin="2"/>
-<wire x1="203.2" y1="53.34" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
