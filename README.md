@@ -7,7 +7,7 @@ Cadsoft eagle shematics and board layout for the Si5351A backpack.
 
 Load ATmega32U4 with Arduino bootloader to upload via USB. 
 
-Boards avaible at https://oshpark.com/shared_projects/FaiE4wdl
+Boards avaible at https://oshpark.com/shared_projects/kJa9OECr
 
 Mounting tips:
 The LCD is supposed to go on the microcontroller side. mount the large components like SMB connectors, crystal (if hole mounted) and pot on the backside of the board.
